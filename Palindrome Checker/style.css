@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    align-items: center;
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    /* min-width: 60%; */
+    text-align: center;
+}
+
+.container {
+    /* height: 250px; */
+    max-width: 400px;
+    padding: 20px 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease-in-out;
+    border: 1px solid;
+}
+.form input {
+    min-width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: x-large;
+    margin: 15px 0;
+    outline: none;
+    border: 2px solid ;
+    border-radius: 5px;
+
+}
+.form input .clicked{
+    opacity: 1;
+}
+.form button {
+    min-width: 100%;
+    height: 40px;
+    text-align: center;
+    margin: 10px 0;
+    justify-content: center;
+    font-size: x-large;
+    border: 2px solid ;
+    background-color: goldenrod;
+    border-radius: 5px;
+    outline: none;
+}
+header h1 {
+    font-size: 30px;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+header P {
+    font-size: 15px;
+    margin: 15px;
+}
+.form button:hover{
+    color: darkred;
+	background: dimgray;
+	transition: .1s ease-in-out;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.form :hover button{
+	display: block;
+}
+.result p{
+    font-size: x-large;
+    font-weight: 500;
+    opacity: 0;
+}
+.result span {
+    color: gold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+}

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    align-items: center;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    /* min-width: 60%; */
+    text-align: center;
+}
+
+.container {
+    height: 260px;
+    /* max-width: 450px; */
+    padding: 20px 0;
+    background-color: chartreuse;
+    border-radius: 10px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease-in-out;
+    /* border: 1px solid; */
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#qr-code {
+    height: 250px;
+    width: 250px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header P {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.form input {
+    min-width: 85%;
+    height: 40px;
+    text-align: center;
+    font-size: x-large;
+    margin: 15px 0;
+    outline: none;
+    border: 2px solid ;
+    border-radius: 5px;
+
+}
+.form button {
+    min-width: 85%;
+    height: 40px;
+    text-align: center;
+    margin: 10px 0;
+    justify-content: center;
+    font-size: x-large;
+    border: 2px solid ;
+    background-color: chartreuse;
+    border-radius: 5px;
+    outline: none;
+}
+.container #qr-code{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: center;
+    /* text-align: center; */
+    position: relative;
+    /* left: 15%; */
+    /* border: 1px solid chartreuse; */
+    background-color: chartreuse;
+    /* background-color: white; */
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 100%;
+    opacity: 1;
+    /* pointer-events: none; */
+}
+.container .clicked  #qr-code{
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s 0.6s ease-in-out;
+}
+.container .clicked{
+    height: 500px;
+}
+
+.form button:hover{
+    color: chartreuse;
+	background: #aa5353;
+	transition: .1s ease-in-out;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.form :hover button{
+	display: block;
+}
